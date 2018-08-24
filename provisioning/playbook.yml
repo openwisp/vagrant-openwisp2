@@ -1,0 +1,10 @@
+---
+
+- hosts: openwisp2
+  gather_facts: yes
+
+  roles:
+    - openwisp.openwisp2
+  
+  vars:
+    postfix_myhostname: localhost
