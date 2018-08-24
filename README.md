@@ -22,7 +22,7 @@ Once all of that is done, you can simply type in `vagrant up`, and Vagrant will 
 
 Once the new VM is up and running (after `vagrant up` is complete and you're back at the command prompt), you can log into it via SSH if you'd like by typing in `vagrant ssh`. Otherwise, the next steps are below.
 
-### Login on OpenWISP2 Server
+### Login on OpenWISP2
 
 When the playbook ran successfully, you can log in at:
 
