@@ -1,0 +1,2 @@
+[openwisp2]
+openwisp2.vagrant.test ansible_ssh_port=22

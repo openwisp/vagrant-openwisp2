@@ -1,0 +1,9 @@
+---
+
+:vms:
+  openwisp2:
+    :vbox: "debian/stretch64"
+    :hostname: "openwisp2.vagrant.test"
+    :ip: "192.168.56.2"
+    :cpu: 1
+    :memory: 512
