@@ -26,7 +26,7 @@ Once the new VM is up and running (after `vagrant up` is complete and you're bac
 
 When the playbook ran successfully, you can log in at:
 
-```
+```code
 https://192.168.56.2/admin
 username: admin
 password: admin

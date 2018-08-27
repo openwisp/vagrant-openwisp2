@@ -3,8 +3,8 @@
 - hosts: openwisp2
   gather_facts: yes
 
+  vars_files:
+    - vars/main.yml
+
   roles:
     - openwisp.openwisp2
-  
-  vars:
-    postfix_myhostname: localhost

@@ -1,3 +1,4 @@
 # General
 .vagrant/
 *.logs
+*.retry
