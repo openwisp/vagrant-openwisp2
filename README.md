@@ -39,4 +39,4 @@ Licensed under the GPLv3 License. See the LICENSE file for details.
 
 ## Author Information
 
-Hispanico
+[Marco Giuntini](https://github.com/hispanico)

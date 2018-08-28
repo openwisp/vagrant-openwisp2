@@ -7,3 +7,7 @@
     :ip: "192.168.56.2"
     :cpu: 1
     :memory: 512
+
+:ansible:
+  :playbook: "provision/site.yml"
+  :inventory_path: "provision/inventory"

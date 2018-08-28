@@ -1,14 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-if ARGV.length == 2
-  if ARGV[1] == '-f'
-    puts "You must use 'vagrant #{ARGV[0]} <name>, [<name>] ...'."
-    puts "Run 'vagrant status' to view VM names."
-    exit 1
-  end
-end
-
 require 'yaml'
 config_yml = YAML.load_file(File.join(__dir__, 'vagrant-config.yml'))
 
@@ -37,19 +29,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.memory = settings[:memory]
       end
 
-    
       # Ansible provisioner.
       vm_config.vm.provision :ansible do |ansible|
-        ansible.playbook = 'provision/site.yml'
-        ansible.inventory_path = 'provision/inventory'
+        ansible.playbook =  config_yml[:ansible][:playbook]
+        ansible.inventory_path = config_yml[:ansible][:inventory_path]
         ansible.become = true
         ansible.host_key_checking = false
       end
     end
-    # config.vm.provision "ansible" do |ansible|
-    #   ansible.playbook = "provisioning/playbook.yml"
-    #   ansible.inventory_path = "provisioning/inventory"
-    #   ansible.become = true
-    # end
   end
 end
