@@ -1,5 +1,4 @@
-# Ansible Vagrant profile for a OpenWISP2 server Test
-
+# Ansible Vagrant profile for a OpenWISP2 server
 ## Background
 
 Vagrant and VirtualBox (or some other VM provider) can be used to quickly build or rebuild virtual servers.
