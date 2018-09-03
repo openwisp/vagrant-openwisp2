@@ -1,4 +1,4 @@
-# Ansible Vagrant profile for a OpenWISP2 server
+# Ansible Vagrant profile for a OpenWISP2 server Test
 
 ## Background
 
