@@ -15,18 +15,17 @@ To use the vagrant file, you will need to have done the following:
   1. Download and Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
   2. Download and Install [Vagrant](https://www.vagrantup.com/downloads.html)
   3. Install [Ansible](http://docs.ansible.com/ansible/latest/intro_installation.html)
-  4. Open a shell prompt (Terminal app on a Mac), clone the git repository and go into the project folder: 
+  4. Clone this repository. See the [GitHub article](https://help.github.com/articles/cloning-a-repository/) if you're unsure how to do this.
+  5. Open a shell prompt (Terminal app on a Mac) and navigate to the directory that was created. 
   ```
-  git clone https://github.com/openwisp/vagrant-openwisp2.git
   cd vagrant-openwisp2
   ```
-  5. Run the following command to install the necessary Ansible roles for this profile:
+  6. Run the following command to install the necessary Ansible roles for this profile:
   ```
   ansible-galaxy install -r requirements.yml
   ```
 
-Once all of that is done, you can simply type in `vagrant up`, and Vagrant will create a new VM, install the base box, and configure it.
-
+Once all of that is done, you can simply type in `vagrant up` in this directory, and Vagrant will create a new VM, install the base box, and configure it.
 Once the new VM is up and running (after `vagrant up` is complete and you're back at the command prompt), you can log into it via SSH if you'd like by typing in `vagrant ssh`. Otherwise, the next steps are below.
 
 ### Login on OpenWISP2
