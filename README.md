@@ -45,4 +45,4 @@ Licensed under the GPLv3 License. See the LICENSE file for details.
 
 ## Author Information
 
-Hispanico
+[Marco Giuntini (aka Hispanico)](https://github.com/hispanico)
