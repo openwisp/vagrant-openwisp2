@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.hostname = "openwisp2"
-  config.vm.network :private_network, ip: "192.168.56.2"
+  config.vm.network :private_network, ip: "192.168.56.5"
 
   # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
   config.vm.define :openwisp2 do |openwisp2|
