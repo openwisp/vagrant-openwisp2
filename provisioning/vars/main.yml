@@ -1,3 +1,4 @@
 ---
 
 postfix_myhostname: localhost
+openwisp2_default_from_email: openwisp@localhost
