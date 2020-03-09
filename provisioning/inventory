@@ -1,2 +1,2 @@
 [openwisp2]
-192.168.56.5 ansible_ssh_port=22
+192.168.56.6 ansible_ssh_port=22
