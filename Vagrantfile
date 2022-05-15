@@ -9,8 +9,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider :virtualbox do |v|
     v.name = "openwisp2"
-    v.memory = 512
     v.cpus = 2
+    v.memory = 2048
+    v.customize ["modifyvm", :id, "--vram", "16"]
   end
 
   config.vm.hostname = "openwisp2"
